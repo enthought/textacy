@@ -7,9 +7,7 @@ import collections
 
 from cytoolz import itertoolz
 from fuzzywuzzy import fuzz
-from Levenshtein import (distance as _levenshtein,
-                         hamming as _hamming,
-                         jaro_winkler as _jaro_winkler)
+
 import numpy as np
 from pyemd import emd
 from sklearn.metrics import pairwise_distances
@@ -18,6 +16,9 @@ from spacy.strings import StringStore
 import textacy
 from textacy import extract
 from textacy.compat import string_types
+from textacy.levenshtein import (distance as _levenshtein,
+                                 hamming as _hamming,
+                                 jaro_winkler as _jaro_winkler)
 
 
 def word_movers(doc1, doc2, metric='cosine'):
