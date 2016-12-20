@@ -11,7 +11,7 @@ import re
 import unicodedata
 
 from ftfy import fix_text
-from unidecode import unidecode
+from text_unidecode import unidecode
 
 from textacy.constants import (CURRENCIES, URL_REGEX, SHORT_URL_REGEX, EMAIL_REGEX,
                                PHONE_REGEX, NUMBERS_REGEX, PUNCT_REGEX, CURRENCY_REGEX,
