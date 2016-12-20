@@ -13,12 +13,12 @@ import math
 from operator import itemgetter
 
 from cytoolz import itertoolz
-from fuzzywuzzy.fuzz import token_sort_ratio
 import networkx as nx
 import numpy as np
 
 from textacy import extract, spacy_utils
 from textacy import vsm
+from textacy.fuzz import token_sort_ratio
 from textacy.network import terms_to_semantic_network
 
 

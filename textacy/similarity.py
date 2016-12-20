@@ -6,7 +6,6 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import collections
 
 from cytoolz import itertoolz
-from fuzzywuzzy import fuzz
 
 import numpy as np
 from pyemd import emd
@@ -15,6 +14,7 @@ from spacy.strings import StringStore
 
 import textacy
 from textacy import extract
+from textacy import fuzz
 from textacy.compat import string_types
 from textacy.levenshtein import (distance as _levenshtein,
                                  hamming as _hamming,
